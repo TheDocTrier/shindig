@@ -1,3 +1,9 @@
+# Development Build
+dist/shindig.dev.js
+
+# Spec Type Declarations
+dist/*.spec.d.ts
+
 # Logs
 logs
 *.log

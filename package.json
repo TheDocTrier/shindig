@@ -1,0 +1,35 @@
+{
+  "name": "shindig",
+  "version": "0.1.0",
+  "description": "Provide a multiplayer framework to browser games.",
+  "main": "./dist/shindig.js",
+  "types": "./dist/shindig.d.ts",
+  "repository": "https://github.com/Tankobot/shindig.git",
+  "author": "Michael Bradley",
+  "license": "LGPL-3.0-or-later",
+  "scripts": {
+    "build": "webpack --config webpack.prod.js",
+    "test": "jest",
+    "prepublish": "yarn build"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/preset-typescript": "^7.3.3",
+    "@types/jest": "^24.0.15",
+    "babel-jest": "^24.8.0",
+    "jest": "^24.8.0",
+    "np": "^5.0.3",
+    "ts-loader": "^6.0.3",
+    "typescript": "^3.5.2",
+    "webpack": "^4.34.0",
+    "webpack-cli": "^3.3.4",
+    "webpack-merge": "^4.2.1"
+  },
+  "dependencies": {
+    "peerjs": "^1.0.0"
+  },
+  "browserslist": [
+    "defaults"
+  ]
+}
