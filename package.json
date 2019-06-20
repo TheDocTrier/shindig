@@ -1,6 +1,6 @@
 {
   "name": "shindig",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Provide a multiplayer framework to browser games.",
   "main": "./dist/shindig.js",
   "types": "./dist/shindig.d.ts",
