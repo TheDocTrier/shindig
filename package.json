@@ -10,7 +10,8 @@
   "scripts": {
     "build": "webpack --config webpack.prod.js",
     "test": "jest",
-    "prepublish": "yarn build"
+    "docs": "typedoc --mode file --theme minimal --excludeNotExported --out docs src/shindig.ts",
+    "prepublish": "yarn build ; yarn docs"
   },
   "devDependencies": {
     "@babel/core": "^7.4.5",
@@ -20,13 +21,16 @@
     "babel-jest": "^24.8.0",
     "jest": "^24.8.0",
     "np": "^5.0.3",
+    "prettier": "^1.18.2",
     "ts-loader": "^6.0.3",
+    "typedoc": "^0.14.2",
     "typescript": "^3.5.2",
     "webpack": "^4.34.0",
     "webpack-cli": "^3.3.4",
     "webpack-merge": "^4.2.1"
   },
   "dependencies": {
+    "eventemitter3": "^4.0.0",
     "peerjs": "^1.0.0"
   },
   "browserslist": [
